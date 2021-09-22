@@ -15,4 +15,4 @@ ifdef DANGLING
 endif
 
 run:
-	docker run -e MINER_OPTIONS="--version" ${IMAGE_NAME}
+	docker run --rm -ite MINER_OPTIONS="--version" ${IMAGE_NAME}
